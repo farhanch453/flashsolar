@@ -1,67 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flash Solar | Powering a Brighter Tomorrow</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #ffcc00; color: #333; padding: 20px 0; text-align: center; }
-    nav { background: #333; padding: 10px; text-align: center; }
-    nav a { color: #fff; text-decoration: none; margin: 0 15px; }
-    .hero { background: url('https://images.unsplash.com/photo-1509395176047-4a66953fd231') center/cover no-repeat; color: white; padding: 100px 20px; text-align: center; }
-    .hero h1 { font-size: 48px; margin-bottom: 10px; }
-    .hero p { font-size: 24px; }
-    .content { padding: 40px 20px; background: white; }
-    .services, .contact { margin-top: 40px; }
-    h2 { color: #333; text-align: center; }
-    .service-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px; }
-    .service { background: #ffcc00; padding: 20px; border-radius: 8px; width: 250px; text-align: center; }
-    footer { background: #333; color: white; padding: 20px; text-align: center; margin-top: 40px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Solar - Professional Solar Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <h1>Flash Solar</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <header>
-    <h1>Flash Solar</h1>
-    <p>Powering a Brighter Tomorrow</p>
-  </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Powering Your Future with Solar Energy</h2>
+            <p>Reliable, Clean, and Sustainable Energy Solutions</p>
+            <a href="#contact" class="cta-btn">Get Started</a>
+        </div>
+    </section>
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Flash Solar, we are committed to providing the best solar solutions for residential and commercial needs. We ensure quality, efficiency, and sustainability.</p>
+    </section>
 
-  <section class="hero">
-    <h1>Go Solar. Save Money. Live Green.</h1>
-    <p>Reliable solar energy solutions for a sustainable future.</p>
-  </section>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-boxes">
+            <div class="service-box">
+                <h3>Solar Panel Installation</h3>
+                <p>We provide top-quality installation services for residential and commercial solar panels.</p>
+            </div>
+            <div class="service-box">
+                <h3>Solar Maintenance</h3>
+                <p>Regular maintenance to ensure your solar panels perform at their best for years.</p>
+            </div>
+            <div class="service-box">
+                <h3>Consultation</h3>
+                <p>Expert advice to help you choose the right solar solutions for your energy needs.</p>
+            </div>
+        </div>
+    </section>
 
-  <section class="content" id="media">
-    <h2>Our Latest Solar Panel</h2>
-    <img src="https://raw.githubusercontent.com/farhanch453/flashsolar/main/images/IMG-20231204-WA0063.jpg" alt="Solar Panel" style="width: 100%; max-width: 600px;">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="mailto:info.flashsolar@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-    <h2 style="margin-top: 40px;">Company Introduction</h2>
-    <iframe src="https://drive.google.com/uc?export=preview&id=1dj4gtsOK-YKKgfqvzqW1oGd-nQYrGKvV" width="640" height="360" allow="autoplay" allowfullscreen></iframe>
-  </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Flash Solar. All rights reserved.</p>
+        </div>
+    </footer>
 
-  <section class="content services" id="services">
-    <h2>Our Services</h2>
-    <div class="service-list">
-      <div class="service">Residential Solar Solutions</div>
-      <div class="service">Commercial Installations</div>
-      <div class="service">Maintenance & Support</div>
-    </div>
-  </section>
-
-  <section class="content contact" id="contact">
-    <h2>Contact Us</h2>
-    <p style="text-align: center;">Phone: 03106090000 | Email: info.flashsolar@gmail.com</p>
-  </section>
-
-  <footer>
-    &copy; 2025 Flash Solar. All rights reserved.
-  </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
